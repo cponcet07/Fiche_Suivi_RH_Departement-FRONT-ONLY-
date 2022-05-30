@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+/*Couleur du fond (gradient) */
+
+
+body {
+    background-image: linear-gradient(to bottom, #13c6fc, #00b4fa, #00a1f6, #008cef, #0077e4, #0667cf, #0757bb, #0647a7, #023a88, #032e6a, #06224d, #071632);
+	font-family: 'Oswald', sans-serif;
+    font: bold;
+}
+.typewriter-container {
+    display: flex;
+    justify-content: flex-start;
+}
+.typewriter p {
+    font-size: 45px;
+    font-weight: lighter;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typing 3.5s steps(28);
+}
+
+html {
+    height: 100%;
+    
+    
+  }
+
+body{
+    margin-top: 150px;
+    margin-left: 500px ;
+    
+}
+button {
+    color: black ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 0px solid #000000;
+    font-family: 'Oswald';
+    margin-top: 10px;
+    background-color: white;
+    text-align: center;
+    padding : 12px;
+    font-size: 12pt;
+    -webkit-box-shadow: 0px 0px 50px #000000;
+    -moz-box-shadow: 0px 0px 51px #000000;
+    box-shadow: 0px 0px 50px #000000;   
+}
+
+/* suppression affichage de base lien*/
+
+a:link, a:visited {
+	color: black;
+	text-decoration: none
+}
+
+/* animation lors passage de souris sur le lien*/
+
+a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    font-size: 12pt ;
+    
+}

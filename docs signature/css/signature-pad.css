@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0;
+  padding: 32px 16px;
+  font-family: Arial, Sans-Serif;
+  background-image: linear-gradient(to bottom, #13c6fc, #00b4fa, #00a1f6, #008cef, #0077e4, #0667cf, #0757bb, #0647a7, #023a88, #032e6a, #06224d, #071632);
+}
+
+.signature-pad {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10px;
+  width: 30%;
+  height: 75%;
+  max-width: 700px;
+  max-height: 460px;
+  border: 1px solid #e8e8e8;
+  background-color: rgba(255, 255, 255, 0.872);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.signature-pad::before,
+.signature-pad::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 40%;
+  height: 10px;
+  bottom: 10px;
+  background: transparent;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.signature-pad::before {
+  left: 20px;
+  -webkit-transform: skew(-3deg) rotate(-3deg);
+          transform: skew(-3deg) rotate(-3deg);
+}
+
+.signature-pad::after {
+  right: 20px;
+  -webkit-transform: skew(3deg) rotate(3deg);
+          transform: skew(3deg) rotate(3deg);
+}
+
+.signature-pad--body {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #000000;
+}
+
+.signature-pad--body
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+/* affichage du "signez au dessus" */
+.signature-pad--footer {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2px;
+  font-family: Oswald;
+  font-weight: bold;
+}
+
+
+.signature-pad--actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+  font-size: 5x;
+}
+
+
+@media (max-width: 940px) {
+  #github img {
+    width: 190px;
+    height: 190px;
+  }
+}
+button {
+  color: black ;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 0px solid #000000;
+  font-family: 'Oswald';
+  margin-top: 10px;
+  background-color: white;
+  text-align: center;
+  padding :7px;
+  font-size: 12pt;
+  -webkit-box-shadow: 0px 0px 50px #000000;
+  -moz-box-shadow: 0px 0px 51px #000000;
+  box-shadow: 0px 0px 50px #000000;   
+}
+
+/* suppression affichage de base lien*/
+
+a:link, a:visited {
+color: black;
+text-decoration: none
+}
+
+/* animation lors passage de souris sur le lien*/
+
+a:hover {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  font-size: 12pt ;
+  
+}
